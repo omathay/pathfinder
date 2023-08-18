@@ -12,7 +12,7 @@ The goal of this project was to practice working with graphs and improve my know
 
 I intended to expand upon this by adding an additional algorithm, which was originally supposed to be Dijkstra's Algorithm. Due to the non-cyclical nature of the graph, it lost nearly all advantage over BFS. It was replaced by A*, or A Star, which performs similar to DFS but typically moves much faster due to the inclusion of a heuristic. Additionally, this project version tracks the performance in time and distance, and allows the user to solve the maze manually.
 
-![Manual Traversal](https://github.com/omathay/pathfinder/blob/88e7be386e4c41ea2a403ae24c7d1249dd3783e1/manual%20traversal.gif)
+![Manual Traversal](https://github.com/omathay/pathfinder/blob/23a9200eacb1e85aa7c6517500ea27b06bdf4941/manual%20traversal.gif)
 # How to Use
 Due to its origin as an assignment, Pathfinder was written using Image and Tester Libraries specific to my university and must have those .jar files in the project classpath in order to run successfully. All libraries used to render and test the code were provided by the course in order to create familiarity working with external libraries and through uncertainty. (In an effort to maintain the privacy of university property, these will not be posted.) In order to run the file, create a new run configuration with the project file and the Main class as "_tester.Main_", and in the arguments field, write "_ExamplesMazes_". The program should run as expected.
 
