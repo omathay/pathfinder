@@ -6,9 +6,11 @@ The program launches with the _bigBang_ call at the end of the ExamplesMazes cla
 ![Maze Generation with Kruskal's Algorithm](https://github.com/omathay/pathfinder/blob/8b94a435cc961a146514fb673643eb638f1f92f3/maze%20generation%20(kruskals).gif)
 
 
-The goal of this project was to practice working with graphs and improve my knowledge of graph algorithms by designing mazes using Kruskal’s algorithm and solving them using either breadth- or depth-first searches. I intended to expand upon this by adding an additional algorithm, which was originally supposed to be Dijkstra's Algorithm. Due to the non-cyclical nature of the graph, it lost nearly all advantage over BFS. It was replaced by A*, or A Star, which performs similar to DFS but typically moves much faster due to the inclusion of a heuristic.
+The goal of this project was to practice working with graphs and improve my knowledge of graph algorithms by designing mazes using Kruskal’s algorithm and solving them using either breadth- or depth-first searches. 
 
-Additionally, this version tracks the performance in time and distance, and allows the user to solve the maze manually.
+![Sample Solutions, Depth- and Breadth-First searches](https://github.com/omathay/pathfinder/blob/6bc0f3546d0af9569d012f1e78434e52888fc3c8/DFS%3ABFS%20demonstration.gif)
+
+I intended to expand upon this by adding an additional algorithm, which was originally supposed to be Dijkstra's Algorithm. Due to the non-cyclical nature of the graph, it lost nearly all advantage over BFS. It was replaced by A*, or A Star, which performs similar to DFS but typically moves much faster due to the inclusion of a heuristic. Additionally, this project version tracks the performance in time and distance, and allows the user to solve the maze manually.
 
 ![Manual Traversal](https://github.com/omathay/pathfinder/blob/88e7be386e4c41ea2a403ae24c7d1249dd3783e1/manual%20traversal.gif)
 
