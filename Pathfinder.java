@@ -1,8 +1,7 @@
 /*
- * Mazes.java
- * 
- * Last updated: 08/17/2023
- * 
+ * Pathfinder.java
+ * Originally Mazes.java
+ *
  * @author: Owen Mathay
  * 
  */
@@ -127,7 +126,7 @@ class Node implements IGamePiece {
 	boolean playerIn;
 
 	/*
-	 * Full constructor for Node class.
+	 * Full constructor for Node objects.
 	 * 
 	 * @param x: x-coordinate of this node in the maze
 	 * @param y: y-coordinate of this node in the maze
@@ -139,10 +138,9 @@ class Node implements IGamePiece {
 	 * @param right: right neighbor of this node
 	 * @param top: top neighbor of this node
 	 * @param bottom: neighbor of this node
-	 * 
 	 */
 	Node(int x, int y, int code, boolean visited, 
-			IGamePiece left, IGamePiece right, IGamePiece top, IGamePiece bottom) {
+	     IGamePiece left, IGamePiece right, IGamePiece top, IGamePiece bottom) {
 		this.x = x;
 		this.y = y;
 		this.code = code;
@@ -153,16 +151,12 @@ class Node implements IGamePiece {
 		this.bottom = bottom;
 	}
 
-	/*
-	 * Convenience constructor, for general use.
-	 */
+	/* Convenience constructor, for general use. */
 	Node(int x, int y, int code) {
 		this(x, y, code, false, new Barrier(), new Barrier(), new Barrier(), new Barrier());
 	}
 
-	/*
-	 * Constructor for the player's node.
-	 */
+	/* Constructor for the player's node. */
 	Node(int x, int y, Board b) {
 		this.x = x;
 		this.y = y;
